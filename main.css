@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+
+body {
+  background: #000;
+  margin: 0;
+}
+
+* {
+  color: white;
+}
+
+.navbar {
+  margin: 24px 180px 0 180px;
+  background: rgba(255, 255, 255, 0.5);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0px 32px;
+  border-radius: 16px;
+  align-items: center;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 400;
+  font-family: "Inria Sans", sans-serif;
+}
+
+.left, .right {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.right{
+  justify-content: end;
+}
+#navactive {
+  font-family: "Staatliches";
+  font-weight: 400;
+  font-size: 42px;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  padding: 0 48px 96px 48px;
+}
+
+.main h1 {
+  font-family: "Red Hat Display";
+  font-size: 120px;
+  font-weight: 500;
+  text-align: center;
+  margin: 144px 0 48px 0;
+}
+
+.main img {
+  width: 100%;
+  border-radius: 28px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+  padding: 48px;
+}
+
+.item .title {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: "Inria Sans", sans-serif;
+  margin: 8px 0 0 0;
+}
+
+.item .desc {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Inria Sans";
+  margin: 0;
+  margin-top: 4px;
+}
+
+
+.item img {
+  width: 100%;
+}
+
+.feathead {
+  font-family: "Red Hat Display";
+  font-size: 48px;
+  line-height: 52px;
+  font-weight: 500;
+}
+
+
+.featured {
+  padding: 48px 48px;
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.24);
+}
+
+.featgrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+}
+
+.featgrid .item img{
+  height: 300px;
+  object-fit: cover;
+}
+
+.testimonials{
+  padding: 0 48px;
+}
+
+.testimonials .text{
+  font-family: "Red Hat Display";
+  font-size: 48px;
+  line-height: 52px;
+}
+
+.testimonials .tests {
+  font-family: "Red Hat Display";
+  font-size: 48px;
+  line-height: 52px;
+  text-align: center;
+}
+.feedback {
+  padding: 48px;
+}
+
+.testimonials {
+  border-bottom: 1.5px solid #3d3d3d;
+}
+
+.feedback h1 {
+  font-family: "Libre Franklin";
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 52px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.feedback .outerDiv {
+  padding: 0;
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+}
+
+.outerDiv::-webkit-scrollbar {
+  display: none;
+}
+
+.outerDiv .card {
+  border: 1.5px solid #3D3D3D;
+  border-radius: 16px;
+  padding: 24px;
+  height: max-content;
+}
+
+.card img {
+  border-radius: 50%;
+}
+.card p {
+  width: 180px;
+  padding-left: 36px;
+  border-left: 1.5px solid #212121;
+  margin-left: 24px;
+  font-family: "Inria Sans";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color:#CCC;
+}
+.card .personDetails {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.personAbout h2 {
+  font-family: "Inria Sans";
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  margin: 0;
+}
+.personAbout h4 {
+  font-family: "Inria Sans";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #666;
+  margin: 0;
+}
+
+.contact{
+  padding: 200px 48px 200px 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.contact h4{
+  font-family: "Red Hat Display";
+  font-size: 28px;
+  text-align: center;
+  margin: 0;
+}
+
+.contact p{
+  font-family: "Red Hat Display";
+  font-size: 15px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.contact div{
+  display: flex;
+  flex-direction: column ;
+}
+
+.contact form{
+  display: flex;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.contact form input{
+  width: 56px;
+  height: 64px;
+  display: flex;
+  border-radius: 8px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background: none;
+  border: 1.5px solid rgba(255,255, 255, 0.24);
+  font-size: 20px;
+}
+
+.contact button{
+  font-family: "Inria Sans";
+  width: 100%;
+  color: #fff;
+  background: rgba(193, 29, 29, 1);
+  padding: 8px 0;
+  border-radius: 8px;
+  border: none;
+  font-size: 15px;
+  margin-bottom: 32px;
+}
+
+.contact a{
+  text-align: center;
+  font-family: "Inria Sans";
+  font-size: 15px;
+  color: rgba(237, 90, 90, 1);
+
+}
+
+.footer {
+  position: relative;
+  height: 800px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer h1 {
+  font-family: "Red Hat Display";
+  font-weight: 500;
+  font-size: 34px;
+  text-align: center;
+}
+
+.footer .maine {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer form {
+  display: flex;
+  gap: 12px;
+  padding: 24px;
+}
+
+.footer form input {
+  border: 2px solid #3D3D3D;
+  padding: 12px;
+  border-radius: 8px;
+  width: 450px;
+  height: 22px;
+  background: #000;
+  font-family: "Inria Sans";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.footer form button {
+  background: #FF0000;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-family: "Inria Sans";
+  font-size: 20px;
+  line-height: 24px;
+  border: none;
+  font-weight: 700;
+}
+
+.footer img {
+  width: 100%;
+  opacity: 50%;
+  position: absolute;
+  top: 0;
+  z-index: -10;
+}
+
+.svgs {
+  display: flex;
+  gap: 32px;
+  padding: 48px;
+}
