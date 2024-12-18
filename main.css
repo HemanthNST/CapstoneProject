@@ -13,7 +13,7 @@ body {
 
 .navbar {
   margin: 24px 180px 0 180px;
-  background: rgba(255, 255, 255, 0.5);
+  background: #180505;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 0px 32px;
@@ -112,8 +112,7 @@ body {
 }
 
 .featgrid .item img{
-  height: 300px;
-  object-fit: cover;
+  width: 100%;
 }
 
 .testimonials{
@@ -276,11 +275,12 @@ body {
 
 .footer {
   position: relative;
-  height: 800px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 233px 0;
+  background: url(assets/footerImage.png);
 }
 
 .footer h1 {
@@ -340,4 +340,51 @@ body {
   display: flex;
   gap: 32px;
   padding: 48px;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar{
+    display: flex;
+    margin: 24px;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .navbar #navactive{
+    order: -1;
+    padding: 0;
+  }
+
+  .main h1{
+    margin-top: 60px;
+  }
+}
+
+@media only screen and (max-width: 579px) {
+  .footer form input{
+    width: 300px;
+  }
+
+  .gallery, .featgrid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .main{
+    padding: 0 36px;
+  }
+  .main .home{
+    font-size: 64px;
+    margin: 32px 0;
+  }
+
+  .footer form input{
+    width: 200px;
+  }
+  
+  .gallery, .featgrid {
+    grid-template-columns: 1fr;
+  }
 }
