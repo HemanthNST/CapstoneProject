@@ -330,6 +330,8 @@ body {
   justify-content: center;
   padding: 233px 0;
   background: url(assets/footerImage.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .footer h1 {
