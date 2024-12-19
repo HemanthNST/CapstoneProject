@@ -391,6 +391,60 @@ body {
   padding: 48px;
 }
 
+.slideUp {
+  animation: 1.5s slideUp ease;
+}
+
+.slideDown {
+  animation: 1.5s slideDown ease;
+}
+
+.slideRight {
+  animation: 1.5s slideRight ease;
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0%;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0%;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    opacity: 0%;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateX(0);
+  }
+}
+
+@keyframes navOpen {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   .navbar{
     display: flex;
