@@ -153,9 +153,58 @@ body {
   padding: 0;
   display: flex;
   gap: 24px;
-  overflow-x: auto;
+  overflow-x: hidden;
+  position: relative;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
+  height: 250px;
+  width: 100%;
 }
 
+.card{
+  position: absolute;
+  left: max(calc(312px * 6), 100%);
+  animation-name: scrollLeft;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  width: 292px;
+}
+
+.card-1 {
+  animation-delay: calc(30s / 6 * (6 - 1) * -1);
+}
+
+.card-2 {
+  animation-delay: calc(30s / 6 * (6 - 2) * -1);
+}
+
+.card-3 {
+  animation-delay: calc(30s / 6 * (6 - 3) * -1);
+}
+
+.card-4 {
+  animation-delay: calc(30s / 6 * (6 - 4) * -1);
+}
+
+.card-5 {
+  animation-delay: calc(30s / 6 * (6 - 5) * -1);
+}
+
+.card-6 {
+  animation-delay: calc(30s / 6 * (6 - 6) * -1);
+}
+
+@keyframes scrollLeft {
+  to {
+    left: -308px;
+  }
+}
 .outerDiv::-webkit-scrollbar {
   display: none;
 }
@@ -342,7 +391,7 @@ body {
   padding: 48px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px) {
   .navbar{
     display: flex;
     margin: 24px;
@@ -359,6 +408,10 @@ body {
   .main h1{
     margin-top: 60px;
   }
+
+  .main h1 {
+    font-size: 100px;
+  }
 }
 
 @media only screen and (max-width: 579px) {
@@ -369,6 +422,14 @@ body {
   .gallery, .featgrid{
     grid-template-columns: repeat(2, 1fr);
   }
+  .main h1 {
+    font-size: 70px;
+  }
+
+  .testimonials .text {
+    font-size: 36px;
+  }
+
 }
 
 @media only screen and (max-width: 425px) {
@@ -386,5 +447,9 @@ body {
   
   .gallery, .featgrid {
     grid-template-columns: 1fr;
+  }
+
+  .main h1 {
+    font-size: 40px;
   }
 }
